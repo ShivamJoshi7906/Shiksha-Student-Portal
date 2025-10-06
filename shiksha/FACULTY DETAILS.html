@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FACULTY DETAILS</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #0b1a2b;
+        color: #ffffff;
+      }
+
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgba(0, 0, 0, 0.85);
+        padding: 10px 30px;
+        border-bottom: 3px solid #ffd700;
+      }
+
+      header a img {
+        height: 50px;
+        display: block;
+      }
+
+      header h1 {
+        margin: 0;
+        font-size: 2em;
+        color: #ffd700;
+        text-shadow: 2px 2px 5px #000;
+        flex-grow: 1;
+        padding-left: 15px;
+      }
+
+      nav {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+      }
+
+      nav a {
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 0.95em;
+        padding: 6px 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+
+      nav a:hover {
+        background-color: #ffd700;
+        color: #0b1a2b;
+      }
+
+      main {
+        padding: 40px;
+        max-width: 900px;
+        margin: 40px auto;
+        background-color: rgba(0, 0, 0, 0.6);
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+      }
+
+      h1,
+      h2 {
+        color: #ffd700;
+        text-shadow: 1px 1px 3px #000;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      h3 {
+        color: #f0e68c;
+        text-align: center;
+        font-weight: normal;
+        margin-bottom: 30px;
+        line-height: 1.6;
+      }
+
+      ul {
+        max-width: 800px;
+        margin: 20px auto 40px;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.4);
+        border-radius: 10px;
+        list-style: square;
+        color: #fffacd;
+      }
+
+      ul li {
+        font-size: 1.1em;
+        margin-bottom: 10px;
+      }
+
+      .slider {
+        position: relative;
+        width: 100%;
+        max-width: 400px;
+        margin: 30px auto;
+        overflow: hidden;
+      }
+
+      .slide {
+        display: none;
+        text-align: center;
+        transition: opacity 0.5s ease-in-out;
+      }
+
+      .slide.active {
+        display: block;
+      }
+
+      .faculty-img {
+        display: block;
+        margin: 0 auto 15px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px #000;
+        width: 200px;
+        height: 250px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .faculty-img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 15px #ffd700;
+      }
+
+      .nav-buttons {
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+        gap: 20px;
+      }
+
+      .nav-buttons button {
+        padding: 8px 16px;
+        font-weight: bold;
+        background-color: #ffd700;
+        border: none;
+        border-radius: 5px;
+        color: #0b1a2b;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      .nav-buttons button:hover {
+        background-color: #e6c200;
+      }
+
+      footer {
+        text-align: center;
+        font-size: 0.9em;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.85);
+        color: #bbb;
+        border-top: 2px solid #ffd700;
+        margin-top: 60px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <a href="Home.html">
+        <img src="shiksha_logo-removebg-preview.png" alt="Shiksha Logo" />
+      </a>
+      <nav>
+        <a href="Home.html">HOME</a>
+        <a href="USER-REGISTRATION.php">USER REGISTRATION</a>
+        <a href="FACULTY DETAILS.html">FACULTY DETAILS</a>
+        <a href="PLACEMENT.HTML">PLACEMENT</a>
+        <a href="CAREER.HTML">CAREER</a>
+        <a href="EVENTS.HTML">EVENTS</a>
+        <a href="NEP 2020.HTML">NEP 2020</a>
+        <a href="LEADERBOARD.HTML">LEADERBOARD</a>
+        <a href="ADMISSION.HTML">ADMISSION</a>
+        <a href="ABOUT US.HTML">ABOUT US</a>
+        <a href="FAQs.html">FAQs</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1>📘 Faculty Details</h1>
+      <h3>
+        At Shiksha, we are proud to have a team of experienced, passionate, and
+        dedicated educators who are committed to guiding students toward
+        academic excellence. Our faculty members come from diverse educational
+        backgrounds and bring a wealth of knowledge to the classroom.
+      </h3>
+
+      <h2>🌟 Our Faculty Highlights:</h2>
+      <ul>
+        <li>
+          <u>Qualified Experts:</u> All our faculty members hold advanced
+          degrees and have years of experience.
+        </li>
+        <li>
+          <u>Student-Focused Approach:</u> Prioritizing clarity, interactivity,
+          and personalized guidance.
+        </li>
+        <li>
+          <u>Continuous Development:</u> Constantly updated with the latest
+          education tech and trends.
+        </li>
+        <li>
+          <u>Mentors, Not Just Teachers:</u> Supporting students beyond
+          textbooks and exams.
+        </li>
+      </ul>
+
+      <h2><u>OUR FACULTY MEMBERS:</u></h2>
+
+      <!-- Dynamic Slider from JSON -->
+      <div class="slider" id="faculty-slider"></div>
+
+      <div class="nav-buttons">
+        <button onclick="prevSlide()">⟨ Prev</button>
+        <button onclick="nextSlide()">Next ⟩</button>
+      </div>
+    </main>
+
+    <footer>
+      Trade Marks belong to the respective owners. Copyright © 2025 Info Edge
+      India Ltd. All rights reserved.
+    </footer>
+
+    <script>
+      // Mock JSON Data
+      const facultyData = {
+        faculty: [
+          { name: "DR. SHIVAM JOSHI", img: "SHIVAM.jpg" },
+          { name: "DR. VED VEKARIYA", img: "VED.jpg" },
+          { name: "DR. MARSHAL GODHANI", img: "MARSHALLLLL.png" },
+          { name: "DR. DHRUVI KUNDARIYA", img: "DHRUVI.jpg" },
+        ],
+      };
+
+      const slider = document.getElementById("faculty-slider");
+
+      // Render faculty dynamically
+      facultyData.faculty.forEach((f, i) => {
+        const div = document.createElement("div");
+        div.className = "slide" + (i === 0 ? " active" : "");
+        div.innerHTML = `
+          <img src="${f.img}" alt="${f.name}" class="faculty-img" />
+          <h1><u>${f.name}</u></h1>
+        `;
+        slider.appendChild(div);
+      });
+
+      // Slider Logic
+      let currentSlide = 0;
+      const slides = document.querySelectorAll(".slide");
+
+      function showSlide(index) {
+        slides.forEach((slide, i) => {
+          slide.classList.remove("active");
+          if (i === index) slide.classList.add("active");
+        });
+      }
+
+      function nextSlide() {
+        currentSlide = (currentSlide + 1) % slides.length;
+        showSlide(currentSlide);
+      }
+
+      function prevSlide() {
+        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+        showSlide(currentSlide);
+      }
+
+      // Auto slide every 3 sec
+      setInterval(nextSlide, 3000);
+    </script>
+  </body>
+</html>

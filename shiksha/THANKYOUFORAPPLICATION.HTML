@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Application Submitted</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        font-family: "Segoe UI";
+        color: #fff;
+        background-color: #0b1a2b;
+      }
+
+      .background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url("thankyou.avif") no-repeat center center fixed;
+        background-size: cover;
+        filter: blur(8px);
+        z-index: -1;
+      }
+
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgba(0, 0, 0, 0.85);
+        padding: 10px 30px;
+        border-bottom: 3px solid #ffd700;
+        flex-wrap: wrap;
+      }
+
+      header a img {
+        height: 50px;
+        transition: transform 0.3s ease;
+      }
+
+      header a img:hover {
+        transform: scale(1.1);
+      }
+
+      nav {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+      }
+
+      nav a {
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 0.95em;
+        padding: 6px 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+
+      nav a:hover {
+        background-color: #ffd700;
+        color: #0b1a2b;
+      }
+
+      main {
+        max-width: 700px;
+        margin: 60px auto;
+        padding: 40px;
+        background-color: rgba(0, 0, 0, 0.6);
+        border-radius: 12px;
+        text-align: center;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+      }
+
+      h1 {
+        color: #ffd700;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 5px #000;
+      }
+
+      p {
+        font-size: 1.1em;
+        color: #f0e68c;
+        line-height: 1.6;
+      }
+
+      a.button {
+        display: inline-block;
+        margin-top: 30px;
+        padding: 12px 25px;
+        background-color: #ffd700;
+        color: #000;
+        font-weight: bold;
+        font-size: 1.1em;
+        border-radius: 10px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+      }
+
+      a.button:hover {
+        background-color: #fffacd;
+      }
+
+      footer {
+        text-align: center;
+        font-size: 0.9em;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.85);
+        color: #ccc;
+        border-top: 2px solid #ffd700;
+        margin-top: 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="Home.html">
+        <img src="shiksha_logo-removebg-preview.png" alt="Shiksha Logo" />
+      </a>
+      <nav>
+        <a href="Home.html">HOME</a>
+        <a href="USER-REGISTRATION.php">USER REGISTRATION</a>
+        <a href="FACULTY DETAILS.html">FACULTY DETAILS</a>
+        <a href="PLACEMENT.HTML">PLACEMENT</a>
+        <a href="CAREER.HTML">CAREER</a>
+        <a href="EVENTS.HTML">EVENTS</a>
+        <a href="NEP 2020.HTML">NEP 2020</a>
+        <a href="LEADERBOARD.HTML">LEADERBOARD</a>
+        <a href="ADMISSION.HTML">ADMISSION</a>
+        <a href="ABOUT US.HTML">ABOUT US</a>
+        <a href="FAQs.html">FAQs</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1>🎉 Thank You for Applying!</h1>
+      <p>Your application has been successfully submitted to SHIKSHA.</p>
+      <p>We will review your details and get back to you via email shortly.</p>
+      <p>
+        If you have any questions, feel free to contact us at<br />
+        <a href="mailto:24DCS035@charusat.edu.in" style="color: #ffd700"
+          >24DCS035@charusat.edu.in</a
+        >.
+      </p>
+      <a href="Home.html" class="button">Return to Home</a>
+    </main>
+
+    <footer>
+      Trade Marks belong to the respective owners. Copyright © 2025 Info Edge
+      India Ltd. All rights reserved.
+    </footer>
+  </body>
+</html>

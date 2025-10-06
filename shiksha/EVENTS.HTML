@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EVENTS</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #0b1a2b;
+        color: #ffffff;
+        display: flex; /* Added for proper footer placement */
+        flex-direction: column; /* Added for proper footer placement */
+      }
+
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgba(0, 0, 0, 0.85);
+        padding: 10px 30px;
+        border-bottom: 3px solid #ffd700;
+        flex-wrap: wrap; /* Ensure navigation wraps */
+      }
+
+      header a img {
+        height: 50px;
+        display: block;
+        transition: transform 0.3s ease;
+      }
+
+      header a img:hover {
+        transform: scale(1.1);
+      }
+
+      nav {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+      }
+
+      nav a {
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 0.95em;
+        padding: 6px 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+
+      nav a:hover {
+        background-color: #ffd700;
+        color: #0b1a2b;
+      }
+
+      main {
+        flex: 1; /* Allows main content to grow */
+        max-width: 900px;
+        margin: 40px auto;
+        padding: 30px;
+        background-color: rgba(0, 0, 0, 0.6);
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+      }
+
+      h1,
+      h2 {
+        color: #ffd700;
+        text-align: center;
+        text-shadow: 1px 1px 3px #000;
+        margin-bottom: 10px;
+      }
+
+      h3 {
+        color: #f0e68c;
+        text-align: center;
+        font-weight: normal;
+        margin-bottom: 30px;
+      }
+
+      ul {
+        list-style-type: square;
+        max-width: 90%;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.4);
+        border-radius: 10px;
+        color: #fffacd;
+      }
+
+      li {
+        font-size: 1.1em;
+        margin-bottom: 10px;
+      }
+
+      /* Style for the new Admin/Manage Events link */
+      .admin-link {
+        display: block;
+        width: fit-content;
+        margin: 20px auto 30px auto;
+        padding: 10px 20px;
+        background-color: #ffd700;
+        color: #0b1a2b;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 8px;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+      }
+
+      .admin-link:hover {
+        background-color: #fffacd;
+        transform: scale(1.03);
+      }
+      /* --- End Admin Link Style --- */
+
+      footer {
+        text-align: center;
+        font-size: 0.9em;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.85);
+        color: #bbb;
+        border-top: 2px solid #ffd700;
+        margin-top: auto; /* Push footer to the bottom */
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="Home.html">
+        <img src="shiksha_logo-removebg-preview.png" alt="SHIKSHA Logo" />
+      </a>
+      <nav>
+        <a href="Home.html">HOME</a>
+        <a href="USER-REGISTRATION.php">USER REGISTRATION</a>
+        <a href="FACULTY DETAILS.html">FACULTY DETAILS</a>
+        <a href="PLACEMENT.HTML">PLACEMENT</a>
+        <a href="CAREER.HTML">CAREER</a>
+        <a href="events_read.php">EVENTS</a>
+        <a href="NEP 2020.HTML">NEP 2020</a>
+        <a href="LEADERBOARD.HTML">LEADERBOARD</a>
+        <a href="ADMISSION.HTML">ADMISSION</a>
+        <a href="ABOUT US.HTML">ABOUT US</a>
+        <a href="FAQs.html">FAQs</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1>🎉 EVENTS</h1>
+      <h3>
+        At Shiksha, we believe that learning extends beyond classrooms. Our
+        events bring together students, faculty, and the community to celebrate
+        creativity, innovation, and collaboration.
+      </h3>
+
+      <a href="events_read.php" class="admin-link">
+        Manage Events (Add, Edit, Delete) 📝
+      </a>
+      <div id="events-container"></div>
+    </main>
+
+    <footer>
+      Trade Marks belong to the respective owners. Copyright © 2025 Info Edge
+      India Ltd. All rights reserved.
+    </footer>
+
+    <script>
+      // Mock JSON Data
+      const eventData = {
+        events: [
+          {
+            title: "Seminars & Guest Lectures",
+            date: "2025-09-01",
+            type: "Academic",
+          },
+          {
+            title: "Workshops on AI & Data Science",
+            date: "2025-09-10",
+            type: "Academic",
+          },
+          { title: "Hackathon", date: "2025-10-10", type: "Academic" },
+          {
+            title: "Annual Cultural Fest – Spoural",
+            date: "2025-11-15",
+            type: "Cultural",
+          },
+          {
+            title: "Literary Debate Competition",
+            date: "2025-11-20",
+            type: "Cultural",
+          },
+          { title: "Annual Sports Week", date: "2025-12-01", type: "Sports" },
+          { title: "Yoga & Fitness Camp", date: "2025-12-15", type: "Sports" },
+          {
+            title: "Tree Plantation Drive",
+            date: "2025-07-20",
+            type: "Social",
+          },
+          { title: "Blood Donation Camp", date: "2025-08-05", type: "Social" },
+          {
+            title: "Founder's Day Celebration",
+            date: "2025-09-25",
+            type: "Celebrations",
+          },
+        ],
+      };
+
+      function renderEvents(events) {
+        const container = document.getElementById("events-container");
+        container.innerHTML = "";
+        let grouped = {};
+
+        // Group by type
+        events.forEach((ev) => {
+          if (!grouped[ev.type]) grouped[ev.type] = [];
+          grouped[ev.type].push(ev);
+        });
+
+        // Render dynamically
+        for (let type in grouped) {
+          const h2 = document.createElement("h2");
+          h2.textContent = type + " Events:";
+          container.appendChild(h2);
+
+          const ul = document.createElement("ul");
+          grouped[type].forEach((ev) => {
+            const li = document.createElement("li");
+            // Format date for better display
+            const formattedDate = new Date(ev.date).toLocaleDateString(
+              "en-US",
+              { year: "numeric", month: "long", day: "numeric" }
+            );
+            li.textContent = `${ev.title} (Date: ${formattedDate})`;
+            ul.appendChild(li);
+          });
+          container.appendChild(ul);
+        }
+      }
+
+      // Initial render
+      renderEvents(eventData.events);
+    </script>
+  </body>
+</html>
